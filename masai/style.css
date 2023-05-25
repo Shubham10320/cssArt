@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&family=Tilt+Prism&display=swap');
+body {
+    background-color:midnightblue;
+    padding: 0;
+    margin: 0;
+}
+/*This is a masai logo div*/
+#name{
+    position: absolute;
+    left: 25%;
+    top: 40%;
+} 
+/*This is a masai logo img*/
+ #name img{
+    height: 300px;
+    width: 800px;
+}
+.container {
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 36%;
+    top: 46%;
+}
+/*This is what cat think in her dream*/
+#thought{
+    position: absolute;
+    height: 80px;
+    width: 30vh;
+    left: 43%;
+    top: 11%;
+    background-color: white;
+    border-radius:50% 50% 50% 0%;
+    padding: 40px 50px 100px 60px;
+    font-weight: bold;
+    line-height: 1.3;
+    border:4px dashed black;
+}
+/*This is a cat face*/
+.cat {
+    background-color: crimson;
+    height: 65px;
+    width: 80px;
+    border-radius: 0 80px 80px 0;
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+}
+/*This is a cat ears*/
+.ear {
+    height: 15px;
+    width: 15px;
+    background-color: crimson;
+    position: absolute;
+    bottom: 64px;
+    left: 8px;
+    border-radius: 20px 0 0 0;
+    box-shadow: 25px 0 crimson;
+}
+/*This is a cat both eyes*/
+.eye,
+.eye:before {
+    height: 7px;
+    width: 10px;
+    border: 2px solid black;
+    position: absolute;
+    border-radius: 0 0 15px 15px;
+    border-top: none;
+}
+/*This is a cat both eyes positions*/
+.eye {
+    top: 18px;
+    left: 15px;
+}
+/*This is a cat eyes u shape*/
+.eye:before {
+    content: "";
+    left: 30px;
+}
+/*This is a cat nose*/
+.nose {
+    background-color: #ffffff;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 25px;
+    box-shadow: 12px 0 #ffffff;
+}
+.nose:before {
+    content: "";
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    background-color: #ffffff;
+    left: 6px;
+}
+.nose:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 8px solid #ef926b;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: 7px;
+    left: 6px;
+}
+/*This is a cat mouth*/
+.mouth {
+    background-color: black;
+    height: 15px;
+    width: 17px;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    top: 38px;
+    left: 27px;
+    animation: mouth-move 2s infinite;
+    transform-origin: top;
+}
+@keyframes mouth-move {
+    50% {
+        transform: scaleY(0.7);
+    }
+}
+.body {
+    background-color: crimson;
+    height: 90px;
+    width: 140px;
+    position: absolute;
+    right: 65px;
+    bottom: 0;
+    border-radius: 60px 60px 0 0;
+    animation: sleep 2s infinite;
+    transform-origin: bottom right;
+}
+/*This is for shrink stomach of cat*/
+@keyframes sleep {
+    50% {
+        transform: scale(0.9, 1.05);
+    }
+}
+.tail {
+    background-color: crimson;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    border-radius: 20px 0 0 20px;
+}
+.body:before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 12px;
+    width: 30px;
+    border-radius: 6px;
+    bottom: 0;
+    left: 22px;
+    box-shadow: 45px 0 #ffffff;
+}
+.bubble {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 65px;
+    top: 20px;
+    border-radius: 50px 50px 50px 5px;
+    animation: bubble-scale 2s infinite;
+}
+@keyframes bubble-scale {
+    50% {
+        transform: scale(1.6);
+    }
+}
+.shadow {
+    height: 10px;
+    width: 240px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 52px;
+    left: 70px;
+    animation: shadow 2s infinite;
+}
+@keyframes shadow {
+    50% {
+        transform: scaleX(0.7);
+    }
+}
+
+
